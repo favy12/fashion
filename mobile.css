@@ -1,0 +1,120 @@
+@media screen and (min-width:280px) and (max-width:500px) {
+
+    .header-img{
+        display: none;
+
+    }
+
+    .header-break{display: none;}
+    .header-content{
+        background-image: url(headerimg1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .hamburger{
+        display:block;
+    }
+    
+    
+
+    .navbar{
+        padding: 10px;
+    }
+
+    .hamburger.active{
+        background-color: var(--primcol);
+        z-index: 10;
+        position: fixed;
+        right: 0%;
+        top: 4%;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primcol);
+        color: #f1f1f1;
+        height: 100vh;
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-link{
+        color: #f1f1f1;
+    }
+    
+    .main-content>div{
+        flex-wrap: wrap-reverse;
+    }
+
+    .main-content>div>p{
+        padding: 0rem 2.5rem;
+        
+    }
+
+    .section1-content{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .portfolio{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .comments-container{
+        flex-wrap: wrap;
+    }
+    .box1, .box2, .box3{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .box.content{
+        padding: 2rem;
+    }
+
+    .asset{
+        width: 100%;
+        max-width: 10%;
+        height: auto;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+}
